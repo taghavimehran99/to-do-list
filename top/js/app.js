@@ -14,6 +14,12 @@ let two=document.getElementById('task')
 let three=document.getElementById('moreinfo')
 let four=document.getElementById('deadtime')
 
+
+
+// let allinput=one +two+three+four;
+
+// console.log(allinput);
+
 // show item
 
 let showList=document.getElementById('showList')
@@ -24,7 +30,10 @@ let btnSmit=document.getElementById('btn')
 
 btnSmit.addEventListener('click',(e)=>{
     e.preventDefault();
+    let addtag=document.createElement('p')
+    let showList=document.getElementById('showList');
+    showList=addtag;
 
-    showList.getElementsByTagName('li')
+    
 
 })

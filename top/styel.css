@@ -9,9 +9,49 @@
 :root{
 
     --clo-one:#00000;
-    
+    --clo-two:#3CC45E;
+
+
+        --border-rud:20px;
+        --border-rud-one:10px;
 
 
 }
 
 
+.hero-text{
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+
+form{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+
+}
+
+input{
+    width: 200px;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: var(--border-rud-one);
+}
+
+.label{
+    display: block;
+    margin-top: 3px;
+    /* margin-bottom: 10px; */
+
+}
+
+.sub{
+    color: aliceblue;
+    background-color: var(--clo-two);
+    border-radius: var(--border-rud) ;
+    border-color: antiquewhite;
+    padding: 5px;
+}

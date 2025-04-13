@@ -10,37 +10,38 @@
     <h2 class="hero-text">today tasks</h2>
 
 
-        <div class="show-list" id="showList">
-                <a href="">sjdvjfvbfjv</a>
+        <div  class="show-list" id="showList">
         </div>
     
 
 
     <section>
-            <form action="" method="post">
+            <form id="form" action="" method="post">
+                <p class="show-strin-task">{{one}} {{two}} {{three}} {{four}}</p>
 
                 <label  class="label" for="nameradder">how</label>
                 <br>
-                <input type="text"  id="nameradder" placeholder="name" required>
+                <input  v-model="one" type="text"  id="nameradder" placeholder="name" required>
                 <br>
                 <label class="label" for="task">tasks</label>
                 <br>
-                <input type="text" id="task" placeholder="what task"required>
+                <input  v-model="two" type="text" id="task" placeholder="what task"required>
                 <br>
                 <label class="label" for="moreinfo">Details</label>
                 <br>
-                <input type="text" id="moreinfo" placeholder="more information"required>
+                <input  v-model="three" type="text" id="moreinfo" placeholder="more information"required>
                 <br>
                 <label class="label" for="deadtime">daed line</label>
                 <br>
-                <input type="date" id="deadtime" placeholder="time"required>
+                <input  v-model="four" type="date" id="deadtime" placeholder="time"required>
                 <br>
 
-                <input class="sub" id="btn" type="submit" value="add to list">
+                <input @click.prevent="btn" class="sub" id="btn" type="submit" value="add to list">
             </form>
     </section>
-
-    <script src="./js/app.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/filevue.js"></script>
+    <!-- <script src="./js/app.js"></script>
+    <script src="./js/app.js"></script> -->
 </body>
 </html>
